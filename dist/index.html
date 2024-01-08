@@ -4,30 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../src/style.css">
+    
     <title>Restraunt Page</title>
 </head>
 <body>
     <div id="content">
-        <div class="header">
+        <!-- <div class="header">
             <img src="../src/images/svg-logo.svg" alt="Logo" class="header-logo">
 
             <div class="page-sections">
-                <a class="home" href="#">Home</a>
-                <a class="menu" href="#">Menu</a>
-                <a class="contact" href="#">Contact</a>
+                <a class="unselected-page-section" href="#">Home</a>
+                <a class="unselected-page-section" href="#">Menu</a>
+                <a class="unselected-page-section" href="#">Contact</a>
             </div>
 
             <button class="order-button">ORDER</button>
         </div>
 
-        <div class="home-content">
-            <!-- <p>The best all you can eat sushi in town</p> -->
+        <div class="home-content hide-content">
             <p>Best Sushi in Town</p>
             <p>Order online or in-person</p>
-            <!-- <img src="../src/images/sushi-background-1.jpg" alt=""> -->
         </div>
 
-        <div class="menu-content">
+        <div class="menu-content hide-content">
             <div class="menu-item">
                 <img src="../src/images/dynamite.png" alt="">
                 <h1>Dynamite &middot $8.95</h1>
@@ -67,7 +66,7 @@
             
         </div>
 
-        <div class="contact-content">
+        <div class="contact-content hide-content">
             <form action="#" method="get">
                 <div class="form-field">
                     <label for="msg_name">Name</label>
@@ -119,6 +118,7 @@
                     <p class="address">
                         123 Parkway
                     </p>
+                    
                     <p class="city-state">
                         Los Angeles, California, 12345
                     </p>
@@ -131,7 +131,7 @@
                     </ul>
 
                     <div class="phone-number">
-                        <img src="../src/images/phone.svg" alt="Phone">
+                        <img class="phone-number-img" src="../src/images/phone.svg" alt="Phone">
                         <p>123-456-7890</p>
                     </div>
                 </div>
@@ -183,8 +183,10 @@
                 Images from <a target="_blank" href="https://www.gingersushi.com/menu/">Ginger Sushi</a> and <a target="_blank" href="https://www.tokyosushinorthhaven.com">Tokyo Sushi II</a>
             </div>
             
-        </div>
+        </div> -->
+
+
+        <script src="main.js"></script>
     </div>
-    <script src="main.js"></script>
 </body>
 </html>
