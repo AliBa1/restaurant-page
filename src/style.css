@@ -116,6 +116,7 @@ table { border-collapse: collapse; border-spacing: 0;}
 
 form {
     width: 40vw;
+    /* border: 1px blue solid; */
 }
 
 .form-field {
@@ -151,6 +152,44 @@ input {
 textarea {
     resize: none;
     overflow: hidden;
+}
+
+.submit-button {
+    background-color: rgba(135, 135, 255, 0.539);
+    width: 64px;
+    height: 32px;
+}
+
+.socials-list {
+    /* border: 1px red solid; */
+    /* align-self: baseline; */
+    margin: 64px 0;
+}
+
+.socials-list > li:first-child {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+.socials-list > li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 4px;
+}
+
+.socials-list > li > img {
+    width: 32px;
+    margin-right: 8px;
+}
+
+.socials-list > li > a {
+    text-decoration: none;
+    color: black;
+}
+
+.socials-list > li > a:hover {
+    text-decoration: underline;
 }
 
 .location-section {
