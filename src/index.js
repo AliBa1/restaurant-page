@@ -9,5 +9,5 @@ headerContent();
 homeContent();
 menuContent();
 contactContent();
-showSection("contact");
+showSection("home");
 locationContent();

@@ -37,20 +37,20 @@ const headerContent = () => {
 
     homeLink.href = "#";
     homeLink.textContent = "Home";
-    homeLink.onclick = showSection('home');
-    homeLink.classList.add("unselected-page-section");
+    homeLink.onclick = () => { showSection('home') };
+    homeLink.classList.add("page-header");
     pageSectionsDiv.appendChild(homeLink);
 
     menuLink.href = "#";
     menuLink.textContent = "Menu";
-    menuLink.onclick = showSection('menu');
-    menuLink.classList.add("unselected-page-section");
+    menuLink.onclick = () => { showSection('menu') };
+    menuLink.classList.add("page-header");
     pageSectionsDiv.appendChild(menuLink);
 
     contactLink.href = "#";
     contactLink.textContent = "Contact";
-    contactLink.onclick = showSection('contact');
-    contactLink.classList.add("unselected-page-section");
+    contactLink.onclick = () => { showSection('contact') };
+    contactLink.classList.add("page-header");
     pageSectionsDiv.appendChild(contactLink);
 
 
@@ -61,9 +61,9 @@ const headerContent = () => {
 }
 
 const showSection = (section) => {
-    homeLink.classList.remove("selected-page-section");
-    menuLink.classList.remove("selected-page-section");
-    contactLink.classList.remove("selected-page-section");
+    homeLink.style.textDecoration = "none";
+    menuLink.style.textDecoration = "none";
+    contactLink.style.textDecoration = "none";
 
     homeDiv.classList.add("hide-content");
     menuDiv.classList.add("hide-content");
@@ -73,22 +73,19 @@ const showSection = (section) => {
     
     switch(section) {
         case "home":
-            homeLink.classList.remove("unselected-page-section");
-            homeLink.classList.add("selected-page-section");
+            homeLink.style.textDecoration = "underline";
 
             homeDiv.classList.remove("hide-content");
             homeDiv.classList.add("home-content");
             break;
         case "menu":
-            menuLink.classList.remove("unselected-page-section");
-            menuLink.classList.add("selected-page-section");
+            menuLink.style.textDecoration = "underline";
 
             menuDiv.classList.remove("hide-content");
             menuDiv.classList.add("menu-content");
             break;
         case "contact":
-            contactLink.classList.remove("unselected-page-section");
-            contactLink.classList.add("selected-page-section");
+            contactLink.style.textDecoration = "underline";
 
             contactDiv.classList.remove("hide-content");
             contactDiv.classList.add("contact-content");

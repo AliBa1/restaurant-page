@@ -32,19 +32,12 @@ table { border-collapse: collapse; border-spacing: 0;}
     /* border: 1px red solid; */
 }
 
-.unselected-page-section {
-    color: inherit;
+.page-header {
+    color: black;
     text-decoration: none;
-    /* margin: 0 clamp(10px, 25px, 50px); */
-    /* margin: 0 50px; */
 }
 
-.selected-page-section {
-    color: inherit;
-    text-decoration: underline;
-}
-
-.unselected-page-section:hover {
+.page-header:hover {
     text-decoration: underline;
 }
 
