@@ -2,6 +2,8 @@
 // show home section on first load
 // 
 import { homeDiv } from "./home";
+import { menuDiv } from "./menu";
+import { contactDiv } from "./contact";
 const contentDiv = document.querySelector('#content');
 const headerDiv = document.createElement('div');
 const locationSectionDiv = document.createElement('div');
@@ -59,35 +61,37 @@ const headerContent = () => {
 }
 
 const showSection = (section) => {
-    homeLink.classList.add("unselected-page-section");
-    menuLink.classList.add("unselected-page-section");
-    contactLink.classList.add("unselected-page-section");
+    homeLink.classList.remove("selected-page-section");
+    menuLink.classList.remove("selected-page-section");
+    contactLink.classList.remove("selected-page-section");
 
     homeDiv.classList.add("hide-content");
-    // menuSection.classList.add("hide-content");
-    // contactSection.classList.add("hide-content");
+    menuDiv.classList.add("hide-content");
+    menuDiv.classList.remove("menu-content");
+    contactDiv.classList.add("hide-content");
+    contactDiv.classList.remove("contact-content");
     
     switch(section) {
         case "home":
-            // homeLink.classList.remove("unselected-page-section");
-            // homeLink.classList.add("selected-page-section");
+            homeLink.classList.remove("unselected-page-section");
+            homeLink.classList.add("selected-page-section");
 
             homeDiv.classList.remove("hide-content");
             homeDiv.classList.add("home-content");
             break;
         case "menu":
-            // menuLink.classList.remove("unselected-page-section");
-            // menuLink.classList.add("selected-page-section");
+            menuLink.classList.remove("unselected-page-section");
+            menuLink.classList.add("selected-page-section");
 
-            // menuSection.classList.remove("hide-content");
-            // menuSection.classList.add("menu-content");
+            menuDiv.classList.remove("hide-content");
+            menuDiv.classList.add("menu-content");
             break;
         case "contact":
-            // contactLink.classList.remove("unselected-page-section");
-            // contactLink.classList.add("selected-page-section");
+            contactLink.classList.remove("unselected-page-section");
+            contactLink.classList.add("selected-page-section");
 
-            // contactSection.classList.remove("hide-content");
-            // contactSection.classList.add("contact-content");
+            contactDiv.classList.remove("hide-content");
+            contactDiv.classList.add("contact-content");
             break;
     }
 }
