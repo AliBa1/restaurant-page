@@ -1,6 +1,7 @@
 // import sections from other pages then use them for showSection
 // show home section on first load
 // 
+import { homeDiv } from "./home";
 const contentDiv = document.querySelector('#content');
 const headerDiv = document.createElement('div');
 const locationSectionDiv = document.createElement('div');
@@ -62,7 +63,7 @@ const showSection = (section) => {
     menuLink.classList.add("unselected-page-section");
     contactLink.classList.add("unselected-page-section");
 
-    // homeSection.classList.add("hide-content");
+    homeDiv.classList.add("hide-content");
     // menuSection.classList.add("hide-content");
     // contactSection.classList.add("hide-content");
     
@@ -71,8 +72,8 @@ const showSection = (section) => {
             // homeLink.classList.remove("unselected-page-section");
             // homeLink.classList.add("selected-page-section");
 
-            // homeSection.classList.remove("hide-content");
-            // homeSection.classList.add("home-content");
+            homeDiv.classList.remove("hide-content");
+            homeDiv.classList.add("home-content");
             break;
         case "menu":
             // menuLink.classList.remove("unselected-page-section");
@@ -164,4 +165,4 @@ const addLocation = (address, cityStateZip, hours, phoneNum) => {
 }
 
 
-export { headerContent, locationContent };
+export { headerContent, showSection, locationContent, contentDiv };
