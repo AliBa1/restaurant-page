@@ -155,7 +155,7 @@ const addLocation = (address, cityStateZip, hours, phoneNum) => {
     locationDiv.appendChild(phoneNumberDiv);
 
     const phoneImg = document.createElement('img');
-    phoneImg.src = "../dist/images/phone.svg";
+    phoneImg.src = "images/phone.svg";
     phoneImg.alt = "Phone";
     phoneImg.classList.add("phone-number-img");
     phoneNumberDiv.appendChild(phoneImg);

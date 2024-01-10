@@ -2,7 +2,6 @@ import { contentDiv } from "./setup";
 const menuDiv = document.createElement('div');
 
 const menuContent = () => {
-    // menuDiv.classList.add("menu-content");
     contentDiv.appendChild(menuDiv);
 
     addMenuItem("Dynamite", 8.95, "shrimp tempura, avocado, cucumber, orange masago, spicy light mayo, sesame");
@@ -20,7 +19,7 @@ const addMenuItem = (flavorName, price, description) => {
 
     let imgString = flavorName.toLowerCase().replace(/\s+/g, "-");
     const itemImg = document.createElement('img');
-    itemImg.src = `../dist/images/${imgString}.png`;
+    itemImg.src = `images/${imgString}.png`;
     itemImg.alt = flavorName;
     menuItemDiv.appendChild(itemImg);
 

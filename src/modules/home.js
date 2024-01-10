@@ -2,8 +2,6 @@ import {contentDiv} from './setup';
 const homeDiv = document.createElement('div');
 
 const homeContent = () => {
-    // homeDiv.classList.add("home-content");
-    // homeDiv.classList.add("hide-content");
     contentDiv.appendChild(homeDiv);
 
     const homeHeader = document.createElement("p");

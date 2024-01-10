@@ -55,7 +55,6 @@ const createFormField = (label, fieldFor, type, isRequired, hasPattern, pattern,
         const fieldTextarea = document.createElement('textarea');
         fieldTextarea.rows = "4";
         fieldTextarea.cols = "50";
-        // fieldTextarea.type = type;
         fieldTextarea.name = fieldFor;
         fieldTextarea.id = fieldFor;
         fieldTextarea.required = isRequired;
@@ -81,7 +80,7 @@ const addSocial = (platform, username) => {
     socialsList.appendChild(socialItem);
 
     const socialItemImg = document.createElement('img');
-    socialItemImg.src = `../dist/images/${platform}.svg`;
+    socialItemImg.src = `images/${platform}.svg`;
     socialItemImg.alt = platform;
     socialItem.appendChild(socialItemImg);
 
