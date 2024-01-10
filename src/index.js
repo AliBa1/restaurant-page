@@ -1,8 +1,8 @@
 // use 'npx webpack --watch' to run site
-import { headerContent, showSection, locationContent } from './setup';
-import { homeContent } from './home';
-import { menuContent } from './menu';
-import { contactContent } from './contact';
+import { headerContent, showSection, locationContent } from './modules/setup';
+import { homeContent } from './modules/home';
+import { menuContent } from './modules/menu';
+import { contactContent } from './modules/contact';
 
 console.log("It's working");
 headerContent();

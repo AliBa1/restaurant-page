@@ -20,7 +20,7 @@ const addMenuItem = (flavorName, price, description) => {
 
     let imgString = flavorName.toLowerCase().replace(/\s+/g, "-");
     const itemImg = document.createElement('img');
-    itemImg.src = `../src/images/${imgString}.png`;
+    itemImg.src = `../dist/images/${imgString}.png`;
     itemImg.alt = flavorName;
     menuItemDiv.appendChild(itemImg);
 

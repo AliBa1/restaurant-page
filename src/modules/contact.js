@@ -81,7 +81,7 @@ const addSocial = (platform, username) => {
     socialsList.appendChild(socialItem);
 
     const socialItemImg = document.createElement('img');
-    socialItemImg.src = `../src/images/${platform}.svg`;
+    socialItemImg.src = `../dist/images/${platform}.svg`;
     socialItemImg.alt = platform;
     socialItem.appendChild(socialItemImg);
 

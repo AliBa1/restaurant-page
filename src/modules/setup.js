@@ -26,7 +26,7 @@ const addLocationsToContent = () => {
 const headerContent = () => {
     addHeaderToContent();
     const logo = document.createElement('img');
-    logo.src = "../src/images/svg-logo.svg";
+    logo.src = "../dist/images/svg-logo.svg";
     logo.alt = "Logo";
     logo.classList.add("header-logo");
     headerDiv.appendChild(logo);
@@ -155,7 +155,7 @@ const addLocation = (address, cityStateZip, hours, phoneNum) => {
     locationDiv.appendChild(phoneNumberDiv);
 
     const phoneImg = document.createElement('img');
-    phoneImg.src = "../src/images/phone.svg";
+    phoneImg.src = "../dist/images/phone.svg";
     phoneImg.alt = "Phone";
     phoneImg.classList.add("phone-number-img");
     phoneNumberDiv.appendChild(phoneImg);
