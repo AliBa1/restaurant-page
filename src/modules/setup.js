@@ -26,7 +26,7 @@ const addLocationsToContent = () => {
 const headerContent = () => {
     addHeaderToContent();
     const logo = document.createElement('img');
-    logo.src = "../dist/images/svg-logo.svg";
+    logo.src = "images/svg-logo.svg";
     logo.alt = "Logo";
     logo.classList.add("header-logo");
     headerDiv.appendChild(logo);
